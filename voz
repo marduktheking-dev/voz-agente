@@ -1,0 +1,5 @@
+#!/bin/sh
+# Atalho de linha de comando: voz — fala com um agente do Habblaud pelo nome.
+# Termux: use `node bin/voz-agente.mjs` (o Termux não tem /bin/sh).
+here=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+exec node "$here/voz-agente.mjs" "$@"

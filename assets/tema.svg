@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="voz-agente: fale com seus agentes pelo nome, sem teclado">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070d17"/>
+      <stop offset="0.55" stop-color="#0d1728"/>
+      <stop offset="1" stop-color="#08131c"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2ee6a8"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="0.42" r="0.55">
+      <stop offset="0" stop-color="#2ee6a8" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#2ee6a8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#7dd3fc" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect width="1280" height="640" fill="url(#grid)"/>
+  <rect width="1280" height="640" fill="url(#glow)"/>
+
+  <!-- moldura -->
+  <rect x="24" y="24" width="1232" height="592" rx="28" fill="none" stroke="#2ee6a8" stroke-opacity="0.18" stroke-width="2"/>
+
+  <!-- barra de status -->
+  <circle cx="72" cy="74" r="7" fill="#2ee6a8"/>
+  <text x="92" y="80" font-family="DejaVu Sans" font-size="17" fill="#8fb3c9" letter-spacing="3">HABBLAUD · TERMUX · LOCAL</text>
+
+  <!-- título -->
+  <text x="68" y="252" font-family="DejaVu Sans" font-size="108" font-weight="bold" fill="#eaf4ff" letter-spacing="-3">voz<tspan fill="url(#accent)">-</tspan>agente</text>
+  <text x="72" y="308" font-family="DejaVu Sans" font-size="30" fill="#a8c3d6">fale com seus agentes pelo nome — sem teclado</text>
+
+  <!-- linha divisória -->
+  <rect x="72" y="344" width="120" height="4" rx="2" fill="url(#accent)"/>
+
+  <!-- chips -->
+  <g font-family="DejaVu Sans" font-size="19" fill="#cfe6f5">
+    <rect x="72" y="384" width="196" height="44" rx="22" fill="#10263a" stroke="#38bdf8" stroke-opacity="0.35"/>
+    <text x="102" y="412">whisper.cpp</text>
+    <rect x="286" y="384" width="146" height="44" rx="22" fill="#10263a" stroke="#2ee6a8" stroke-opacity="0.35"/>
+    <text x="316" y="412">Termux:API</text>
+    <rect x="450" y="384" width="238" height="44" rx="22" fill="#10263a" stroke="#38bdf8" stroke-opacity="0.35"/>
+    <text x="480" y="412">/api/messages</text>
+    <rect x="706" y="384" width="150" height="44" rx="22" fill="#10263a" stroke="#2ee6a8" stroke-opacity="0.35"/>
+    <text x="736" y="412">espeak</text>
+  </g>
+
+  <!-- rodapé -->
+  <text x="72" y="540" font-family="DejaVu Sans" font-size="20" fill="#6f8ea6">STT local</text>
+  <text x="176" y="540" font-family="DejaVu Sans" font-size="20" fill="#2ee6a8">→</text>
+  <text x="200" y="540" font-family="DejaVu Sans" font-size="20" fill="#6f8ea6">resolve o nome no escritório</text>
+  <text x="452" y="540" font-family="DejaVu Sans" font-size="20" fill="#2ee6a8">→</text>
+  <text x="476" y="540" font-family="DejaVu Sans" font-size="20" fill="#6f8ea6">entrega na sessão certa</text>
+  <text x="716" y="540" font-family="DejaVu Sans" font-size="20" fill="#2ee6a8">→</text>
+  <text x="740" y="540" font-family="DejaVu Sans" font-size="20" fill="#6f8ea6">resposta em voz</text>
+
+  <!-- painel de áudio -->
+  <g transform="translate(880,120)">
+    <rect x="0" y="0" width="320" height="400" rx="28" fill="#0a1524" stroke="#2ee6a8" stroke-opacity="0.22"/>
+    <!-- microfone -->
+    <g transform="translate(160,104)">
+      <rect x="-26" y="-58" width="52" height="104" rx="26" fill="url(#accent)"/>
+      <path d="M-52 -6a52 52 0 0 0 104 0" fill="none" stroke="#eaf4ff" stroke-opacity="0.85" stroke-width="6" stroke-linecap="round"/>
+      <path d="M0 46v26" stroke="#eaf4ff" stroke-opacity="0.85" stroke-width="6" stroke-linecap="round"/>
+      <path d="M-20 72h40" stroke="#eaf4ff" stroke-opacity="0.85" stroke-width="6" stroke-linecap="round"/>
+    </g>
+    <!-- onda -->
+    <g fill="url(#accent)">
+      <rect x="46" y="262" width="12" height="26" rx="6" opacity="0.55"/>
+      <rect x="70" y="246" width="12" height="58" rx="6" opacity="0.7"/>
+      <rect x="94" y="230" width="12" height="90" rx="6" opacity="0.85"/>
+      <rect x="118" y="212" width="12" height="126" rx="6"/>
+      <rect x="142" y="238" width="12" height="74" rx="6" opacity="0.9"/>
+      <rect x="166" y="220" width="12" height="110" rx="6"/>
+      <rect x="190" y="244" width="12" height="62" rx="6" opacity="0.8"/>
+      <rect x="214" y="232" width="12" height="86" rx="6" opacity="0.7"/>
+      <rect x="238" y="256" width="12" height="38" rx="6" opacity="0.55"/>
+    </g>
+    <text x="160" y="344" text-anchor="middle" font-family="DejaVu Sans" font-size="16" fill="#7c9bb0" letter-spacing="2">OUVINDO</text>
+  </g>
+</svg>

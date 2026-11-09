@@ -1,0 +1,34 @@
+{
+  "name": "voz-agente",
+  "version": "0.1.0",
+  "description": "Fale com agentes do Habblaud pelo nome que o escritório deu a eles — STT local, entrega por /api/messages e resposta em voz.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "voz-agente": "bin/voz-agente.mjs"
+  },
+  "engines": {
+    "node": ">=22.12"
+  },
+  "files": [
+    "bin/",
+    "docs/",
+    "assets/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node bin/voz-agente.mjs",
+    "listar": "node bin/voz-agente.mjs --listar",
+    "teste": "node bin/voz-agente.mjs --texto \"agente Francisco, teste\" --dry-run"
+  },
+  "keywords": [
+    "habblaud",
+    "voz",
+    "stt",
+    "tts",
+    "whisper",
+    "termux",
+    "agentes"
+  ]
+}
